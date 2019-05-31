@@ -1,0 +1,19 @@
+{
+    "name": "SwiftVendorId", 
+    "version": "0.0.1", 
+    "description": "Your Plugin Description", 
+    "cordova": {
+      "id": "cordova-plugin-swift-vendor-id", 
+      "platforms": [ 
+        "ios" 
+      ]
+    },
+    "keywords": [ 
+      "vendorId",
+      "uuid",
+      "uid",
+      "cordova-ios"
+    ],
+    "author": "Narickson Ndegwa", 
+    "license": "MIT" 
+  }
