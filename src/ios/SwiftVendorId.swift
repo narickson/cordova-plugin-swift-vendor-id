@@ -11,7 +11,8 @@
     // Set the plugin result to fail.
     var pluginResult = CDVPluginResult (status: CDVCommandStatus_ERROR, messageAs: "uh la la! Error fetching Vendor Id...001");
     // Set the plugin result to succeed.
-        pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: "Cheers to the freakin weekend.");
+       let uuid: String = (UIDevice.current.identifierForVendor?.uuidString)!
+        pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: uuid);
     // Send the function result back to Cordova.
     self.commandDelegate!.send(pluginResult, callbackId: command.callbackId);
   }
